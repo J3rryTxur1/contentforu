@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Myanmar AI Product Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;500;600;700;800&family=Noto+Serif+Myanmar:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">A</div><div><strong>Myanmar AI Studio</strong><span>Product Content & Design</span></div></div>
+  <nav>
+    <button class="nav active">⌂ <span>Content ဖန်တီးရန်</span></button>
+    <button class="nav">▣ <span>My Projects</span></button>
+    <button class="nav">◫ <span>Templates</span></button>
+    <button class="nav">◇ <span>Brand Kit</span></button>
+    <button class="nav">◈ <span>Pricing</span></button>
+    <button class="nav">⚙ <span>Settings</span></button>
+  </nav>
+  <div class="upgrade"><div class="crown">♛</div><h3>Pro သို့ Upgrade လုပ်ပါ</h3><p>ပိုများတဲ့ Credits နဲ့ Premium Design တွေကို အသုံးပြုနိုင်ပါတယ်။</p><button>Upgrade Now</button></div>
+</aside>
+
+<main class="main">
+<header class="topbar"><nav><a class="selected">Create</a><a>Templates</a><a>My Projects</a><a>Brand Kit</a><a>Pricing</a></nav><div class="profile"><div class="credits">🪙 <b>150</b> Credits</div><div class="avatar">D</div><b>Didu</b>⌄</div></header>
+
+<section class="hero"><div><div class="eyebrow">🇲🇲 Made for Myanmar Sellers</div><h1>Product တစ်ခုကို<br><span>ရောင်းချင်စရာ Post</span> တစ်ခုဖြစ်အောင်</h1><p>Product ပုံတစ်ပုံတင်လိုက်ရုံနဲ့ မြန်မာ Customer တွေနဲ့ သဘာဝကျကျပြောနိုင်တဲ့ Content နဲ့ Ready-to-post Design ကို ဖန်တီးပေးမယ်။</p></div><div class="hero-note">Write like a professional.<br>Design like a brand. ✦</div></section>
+
+<section class="steps">
+<div><b>↥</b><span><strong>ပုံတင်ပါ</strong><small>Product image ထည့်ပါ</small></span></div>
+<div><b>✣</b><span><strong>AI ကနားလည်မယ်</strong><small>Product နဲ့ customer ကိုခွဲခြမ်းမယ်</small></span></div>
+<div><b>✎</b><span><strong>Content ဖန်တီးမယ်</strong><small>မြန်မာလို သဘာဝကျကျရေးမယ်</small></span></div>
+<div><b>⇩</b><span><strong>Ready to Post</strong><small>Design & Caption တစ်ခါတည်းရမယ်</small></span></div>
+</section>
+
+<section class="workspace">
+<div class="panel controls">
+<h2>၁။ Product ပုံတင်ပါ</h2>
+<label class="dropzone" id="dropzone"><input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp"><div class="upload-icon">▧</div><strong>Product ပုံကို ဒီနေရာမှာ တင်ပါ</strong><span>သို့မဟုတ် click လုပ်ပြီးရွေးပါ</span><small>JPG, PNG, WebP · 10MB အထိ</small></label>
+<div id="fileInfo" class="file-info hidden"><div class="thumb" id="thumb"></div><div><strong id="fileName"></strong><span id="fileSize"></span></div><button id="removeFile">×</button></div>
+
+<h2>၂။ Product အချက်အလက်</h2>
+<label>Product Name<input id="productName" value="Chanel No.5 Perfume"></label>
+<label>ဈေးနှုန်း (Optional)<input id="price" value="129,000 Ks"></label>
+<label>အတိုချုံးဖော်ပြချက်<textarea id="description">နေ့တိုင်းသုံးဖို့ သင့်တော်တဲ့ classic fragrance လေး။</textarea></label>
+
+<h2>၃။ ဘယ်လိုလူတွေအတွက် ရေးမလဲ?</h2>
+<div class="chips audience"><button class="chip active">မြန်မာ Customer</button><button class="chip">လူငယ်</button><button class="chip">အမျိုးသမီး</button><button class="chip">အမျိုးသား</button><button class="chip">Premium</button><button class="chip">Budget</button></div>
+
+<h2>၄။ စာရေးပုံစံ</h2>
+<div class="chips tone"><button class="chip active">သဘာဝဆန်ဆန်</button><button class="chip">Professional</button><button class="chip">Friendly</button><button class="chip">Premium</button><button class="chip">လူငယ်ဆန်ဆန်</button><button class="chip">Storytelling</button></div>
+
+<h2>၅။ Design Style</h2>
+<div class="styles"><button class="style active"><span>◆</span>Premium</button><button class="style"><span>◐</span>Minimal</button><button class="style"><span>SALE</span>Sale</button><button class="style"><span>◈</span>Luxury</button><button class="style"><span>♢</span>Beauty</button><button class="style"><span>◉</span>Fashion</button><button class="style"><span>▣</span>Tech</button><button class="style"><span>✕</span>Custom</button></div>
+<div class="font-row"><span>Myanmar Font</span><select><option>Noto Sans Myanmar</option><option>Noto Serif Myanmar</option></select></div>
+<button class="generate" id="generate">✦ မြန်မာ Content & Design ဖန်တီးမယ်</button>
+</div>
+
+<div class="panel design-panel">
+<div class="panel-head"><h2>▧ Ready-to-post Design</h2><button class="download" id="downloadDesign">⇩ Download</button></div>
+<div class="design-preview"><div class="floral">✿</div><div class="design-copy"><div class="mm-title">အမြဲတမ်း<br>လှပနေဖို့ ✨</div><strong id="previewName">CHANEL No.5</strong><small>Classic fragrance for every day</small><div class="features">◷ ကြာရှည်ခံတဲ့ အနံ့<br>♢ Premium Quality<br>♡ နေ့စဉ်သုံးဖို့ သင့်တော်</div><button>အခုပဲ မှာယူပါ</button><small>Be elegant. Be yourself.</small></div><div class="bottle"><div class="cap"></div><div class="bottle-body"><span>N°5<br>CHANEL</span></div></div></div>
+<h3>Design Variations</h3><div class="variations"><button class="variation active">အမြဲတမ်း<br>လှပနေဖို့</button><button class="variation">ကိုယ့်အတွက်<br>ကိုယ်ရွေးချယ်ပါ</button><button class="variation">Luxury<br>Everyday</button></div>
+</div>
+
+<div class="panel content-panel">
+<div class="panel-head"><h2>✣ မြန်မာလို Ready-to-post Content</h2><button class="copy-all" id="copyAll">▢</button></div>
+<div class="notice">AI လိုမခံစားရအောင် Product နဲ့ Customer အလိုက် စကားပြောသလို ရေးပေးထားပါတယ်။</div>
+<div class="tabs"><button class="tab active" data-tab="caption">Main Caption</button><button class="tab" data-tab="short">Short</button><button class="tab" data-tab="hashtags">Hashtags</button><button class="tab" data-tab="ad">Ad Copy</button></div>
+<div class="content-box" id="contentBox"></div>
+<div class="side-card"><h2>✣ Product အားသာချက်</h2><p>› Classic & timeless fragrance</p><p>› ကြာရှည်ခံတဲ့ scent</p><p>› Premium quality</p><p>› နေ့စဉ်သုံးဖို့ အဆင်ပြေ</p></div>
+<div class="side-card"><h2>⌁ CTA အကြံပြုချက်</h2><p>› “အခုပဲ မှာယူလိုက်ပါ”</p><p>› “ဈေးနှုန်းသိချင်ရင် Chat Box မှာမေးပါ”</p><p>› “ကိုယ်တိုင်သုံးဖို့ဖြစ်ဖြစ် လက်ဆောင်ပေးဖို့ဖြစ်ဖြစ် ရွေးလို့ကောင်းပါတယ်”</p></div>
+</div>
+</section>
+</main></div><div class="toast" id="toast"></div><script src="script.js"></script>
+</body></html>
